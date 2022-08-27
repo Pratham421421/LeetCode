@@ -3,7 +3,7 @@ class Solution {
       String ans = "";
         for(int i=0; i<s.length(); i++){
             String s1 = isPallindrome(s, i, i);
-             String s2 = isPallindrome(s, i, i+1);
+            String s2 = isPallindrome(s, i, i+1);
             
             if(s1.length()>ans.length()){
                 ans = s1;
@@ -15,6 +15,7 @@ class Solution {
         }
         return ans;
     }
+    
     public String isPallindrome(String s, int l, int r){
         while (l >= 0 && r < s.length()
             && s.charAt(l) == s.charAt(r)) {
